@@ -1,4 +1,8 @@
 <h1>Page#home</h1>
 <p>Find me in app/views/page/home.html.erb</p>
 <b><%= @deepak+ " "+@time.to_s %></b>
-Name of the person: <%= @url1 + @url2%>
+Name of the person: <%#= @url1 + @url2%>
+
+<% @users.each do |user| %>
+	<%=(user+"<br/>").html_safe  %>
+<% end %>
