@@ -2,6 +2,7 @@ class PageController < ApplicationController
   def home
 	  @time=Time.now
 	  @deepak="Hello Rohan"
+	  @cal_day=Date.today.at_beginning_of_month
 	  @url1=params[:name]
 	  	#params are used to fetch the strings passed in the url...
 	  	#In the above case I am passing the name in URL e.g. #?name=rohan

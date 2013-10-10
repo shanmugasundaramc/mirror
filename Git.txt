@@ -1,3 +1,4 @@
+
 Getting up Git
 
 How do i get it coloured
@@ -16,5 +17,12 @@ git log --shortstat
 git log --name-status list of M/A files
 
 git log -p {this will give me the patch file}
+git show-ref {will give me the list of all heads and remote origins}
+ 
 
+git cat-file -p {Blob,Tree, Master}
+Its to inspect the git at various levels
+
+Settings-->accessibility-->desktopsettings-->
+chrome-->desktop
 
