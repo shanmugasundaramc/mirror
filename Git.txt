@@ -1,0 +1,8 @@
+git show-ref {will give me the list of all heads and remote origins}
+ 
+
+git cat-file -p {Blob,Tree, Master}
+Its to inspect the git at various levels
+
+Settings-->accessibility-->desktopsettings-->
+chrome-->desktop
