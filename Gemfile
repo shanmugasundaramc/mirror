@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
@@ -19,7 +18,10 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+platforms :jruby do
+  gem 'activerecord-jdbc-adapter'
+  gem 'activerecord-jdbcmysql-adapter'
+end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
