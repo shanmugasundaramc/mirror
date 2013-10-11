@@ -1,8 +1,10 @@
-<h1>Page#home</h1>
+<<h1>Page#home</h1>
 <p>Find me in app/views/page/home.html.erb</p>
 <b><%= @deepak+ " "+@time.to_s %></b>
 Name of the person: <%#= @url1 + @url2%>
-
+<li><b><%= @cal_day %></b><li>
 <% @users.each do |user| %>
 	<%=(user+"<br/>").html_safe  %>
 <% end %>
+<%= calender(@month, @year) %>
+
