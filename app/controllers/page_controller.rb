@@ -9,6 +9,7 @@ class PageController < ApplicationController
 	  	#Page has to display Rohan when @url is called
 	  	#http://localhost:3000/page/home?name=rohan&year=2013
 	  @url2=params[:year]
+	  @month=params[:month]
 	  @users=["Rohan", "Deepak", "Shiva", "G", "john"]
   end
 

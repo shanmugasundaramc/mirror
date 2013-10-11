@@ -1,5 +1,6 @@
 Blogger::Application.routes.draw do
-  get "page/home"
+  #get "page/home"
+  get "page/home(/:year(/:month))"=>"page#home", :as=>"page_home"
 
   get "page/tech"
 
