@@ -1,0 +1,28 @@
+
+Getting up Git
+
+How do i get it coloured
+git config --global color.ui auto
+
+git config --global user.name -->
+git config --global user.email -->
+
+git config --global color.status auto
+git config --global color.branch auto
+
+git log , git log -2
+git log --stat
+git log --shortstat
+
+git log --name-status list of M/A files
+
+git log -p {this will give me the patch file}
+git show-ref {will give me the list of all heads and remote origins}
+ 
+
+git cat-file -p {Blob,Tree, Master}
+Its to inspect the git at various levels
+
+Settings-->accessibility-->desktopsettings-->
+chrome-->desktop
+

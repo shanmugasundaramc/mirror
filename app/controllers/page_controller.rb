@@ -17,6 +17,8 @@ class PageController < ApplicationController
   end
 
   def news
+    @times=Time.now
+    @name="Sai"
   end
 
   def facts
