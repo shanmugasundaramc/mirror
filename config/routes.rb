@@ -1,6 +1,9 @@
 Blogger::Application.routes.draw do
-  #get "page/home"
-  get "page/home(/:year(/:month))"=>"page#home", :as=>"page_home"
+  
+  get "page/home" #So here the issue
+  #when the route is kept as above, I have the params of months decreasing and increasing as per the links
+  #however, if i change the below line the params are not being passed when the page is being reloaded
+  #get "page/home(/:year(/:month))"=>"page#home", :as=>"page_home"
 
   get "page/tech"
 
