@@ -8,7 +8,7 @@ class PageController < ApplicationController
 	  	#In the above case I am passing the name in URL e.g. #?name=rohan
 	  	#Page has to display Rohan when @url is called
 	  	#http://localhost:3000/page/home?name=rohan&year=2013
-	  @url2=params[:year]
+	  @year=params[:year]#changing this to year fixed my issue of month addtion and subtraction WTF...? 
 	  @month=params[:month]
 	  @users=["Rohan", "Deepak", "Shiva", "G", "john"]
   end
