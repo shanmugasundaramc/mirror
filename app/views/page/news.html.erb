@@ -1,5 +1,17 @@
+<%content_for :title do%>
+News
+<%end%>
 <h1>Page#news</h1>
 <p>Find me in app/views/page/news.html.erb</p>
 
-<h1> Sai</h1>
-<h1><%= @times %></h1>
+
+<%= form_tag do%>
+   <%= text_field_tag 'Name' %>
+    <%= submit_tag "Submit the Question"%>
+<%end%>
+
+<%= params.inspect %>
+
+<div>
+  <%= @name%>
+</div>

@@ -1,12 +1,9 @@
+<%content_for :title do%>
+Home
+<%end%>
 <<h1>Page#home</h1>
 <p>Find me in app/views/page/home.html.erb</p>
-<b><%= @deepak+ " "+@time.to_s %></b>
-Name of the person: <!--<%# = Keep this if you wanna test the param name and year in the url= @url1 + @url2 %>-->
 
-Check the value of the month and year <%="Month:"+ @month+"   "+"Year:"+@url2 %>
-<li><b><%= @cal_day %></b><li>
-<% @users.each do |user| %>
-	<%=(user+"<br/>").html_safe  %>
-<% end %>
-<%= calender(@month, @year) %>
+<%=@month%>
+<%= calender_p(@month, @year) %>
 

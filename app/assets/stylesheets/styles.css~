@@ -14,6 +14,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form, label, legen
 	vertical-align: baseline;
 }
 
+table{
+	width:30px;
+	height:247px;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -120,7 +125,7 @@ background: #fff;
 width: 940px;
 margin: 0 auto;
 padding-top: 30px;
-background: #FFF url(assets/colbg.png) repeat-y;
+background: #FFF repeat-y;
 overflow: hidden;
 }
 
@@ -405,7 +410,7 @@ color: #faf0e6;
 	left:100px;
 	width:401px;
 	height:58px;
-	background-image: url(assets/intro.png);
+	background-image: url(/assets/intro.png);
 	margin: 0 auto;
 	display: block;
 	color:#fff;

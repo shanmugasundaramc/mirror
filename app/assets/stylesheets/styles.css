@@ -456,3 +456,49 @@ color:#8b0000 ;
 .black { 
 color:#191919;
 }
+@import url( //fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic );
+BODY {
+    PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 15px/1.5 "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; BACKGROUND: #f0efe7; COLOR: #4e443c; PADDING-TOP: 0px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
+}
+H1 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H2 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H3 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H4 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H5 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H6 {
+    TEXT-ALIGN: center; FONT-FAMILY: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-WEIGHT: normal; text-rendering: optimizelegibility
+}
+H1 {
+    COLOR: #4e443c; FONT-SIZE: 36px; FONT-WEIGHT: bold
+}
+H2 {
+    COLOR: #f14e32
+}
+H2 A {
+    COLOR: #f14e32
+}
+H3 {
+    COLOR: #0388a6
+}
+H3 A {
+    COLOR: #0388a6
+}
+A {
+    COLOR: #0388a6
+}
+PRE {
+    BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; OVERFLOW-X: auto; BACKGROUND: #222; COLOR: #fff; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; text-shadow: none
+}
+.wrapper {
+    PADDING-BOTTOM: 40px; MARGIN: auto; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; MAX-WIDTH: 620px; PADDING-TOP: 0px
+}
