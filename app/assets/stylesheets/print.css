@@ -40,8 +40,8 @@ a {
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 250px;
 }
 
 .jcarousel ul {
