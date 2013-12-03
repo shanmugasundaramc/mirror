@@ -5,20 +5,24 @@ Tech
 <p>Find me in app/views/page/tech.html.erb</p>
 <link rel=stylesheet type="text/css" href="/assets/slide.css">
 
+<script type=text/javascript src="assets/jquery.min.js"></script>
+<!-- include Cycle plugin -
 <SCRIPT type=text/javascript
-        src="assets/jquery-1.10.2.min.js"></SCRIPT>
-<!-- include Cycle plugin -->
-<SCRIPT type=text/javascript
-        src="assets/jquery.cycle.all.js"></SCRIPT>
+        src="assets/jquery.cycle.all.js"></SCRIPT>-->
 
-<div class="slideshow" id=pics>
+<div class="slideshow">
   <li><img src="/assets/img1.jpg" width="500" height="250"></li>
   <li><img src="/assets/img2.jpg" width="500" height="250"></li>
-  <!--<li><img src="/assets/img3.jpg" width="500" height="250"></li>
+  <li><img src="/assets/img3.jpg" width="500" height="250"></li>
  <li><img src="/assets/img4.jpg" width="500" height="250"></li>
- <li><img src="/assets/img5.jpg" width="500" height="250"></li>-->
+ <li><img src="/assets/img5.jpg" width="500" height="250"></li>
 </div>
 
 <script type="text/javascript">
-        //  $('#slideshow').cycle()
+         //$('#slideshow').cycle()
+         $(".slideshow").hide();
+        $(document).ready(function(){
+            $(".slideshow").show();
+            $('.slideshow').cycle('fade');
+        });
 </script>
