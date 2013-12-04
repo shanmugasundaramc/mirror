@@ -1,4 +1,13 @@
 module ApplicationHelper
+
+  def show_params
+    showstr="<h4> field_set_tag "PARAMS" do </h4>"
+    showstr+= "Name= " "#{@name}"
+    showstr += "Email= " "#{@email}"
+    showstr += "Age= ""#{@age}"
+    params.inspect
+     end
+  end
 	def calender_p(month, year)	
 		prev_month=link_to "Previous",page_home_deep_path(:month=>@month.to_i - 1,:year=>@year)
 		next_month=link_to "Next",page_home_deep_path(:month=>@month.to_i + 1, :year=>@year)

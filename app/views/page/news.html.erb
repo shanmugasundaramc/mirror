@@ -1,16 +1,27 @@
 <%content_for :title do%>
 News
 <%end%>
-<h1>Page#news</h1>
+<h4>Page#news</h4>
 <p>Find me in app/views/page/news.html.erb</p>
 
 
 <%= form_tag do%>
-   <%= text_field_tag 'Name' %>
-    <%= submit_tag "Submit the Question"%>
+   <b> <%= field_set_tag "INFORMATION"	do  %> </b>
+         <p>
+           <%= label_tag "Name:" %>
+           <%= text_field_tag 'name',@name, :size=>50 %>
+         </p>
+         <p>
+           <%= label_tag 'email', "Email Address:" %>
+           <%= email_field_tag 'email',@email,:placeholder=>"Enter the Email", :size=>50 %>
+         </p>
+         <p>
+           <%= label_tag 'age',"Age:" %>
+           <%= number_field_tag 'age',@age, :min=>18, :max=>100, :size=>50 %>
+         </p>
+        <%= submit_tag "Submit the Question"%>
+        <%end%>
 <%end%>
-
-<%= params.inspect %>
 
 <div>
   <%= @name%>

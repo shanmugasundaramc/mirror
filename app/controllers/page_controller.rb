@@ -18,7 +18,9 @@ class PageController < ApplicationController
 
   def news
     @times=Time.now
-    @name=params[:Name]
+    @name=params[:name]
+    @email=params[:email]
+    @age=params[:age]
   end
 
   def facts
