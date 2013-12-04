@@ -20,9 +20,9 @@ Tech
 
 <script type="text/javascript">
          //$('#slideshow').cycle()
-         $(".slideshow").hide();
-        $(document).ready(function(){
-            $(".slideshow").show();
+        // On loading the window this will start the cycle of images
+        $(window).load(function(){
+            //$(".slideshow").show();
             $('.slideshow').cycle('fade');
         });
 </script>
