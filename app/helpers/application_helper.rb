@@ -1,11 +1,13 @@
 module ApplicationHelper
 
   def show_params
-    showstr="<h4> field_set_tag "PARAMS" do </h4>"
-    showstr+= "Name= " "#{@name}"
-    showstr += "Email= " "#{@email}"
-    showstr += "Age= ""#{@age}"
-    params.inspect
+    showstr="<div>"
+    showstr+="<heading> PARAMS </heading>"
+      params each  do |key,value|
+    showstr+= "#{key}:  #{value} <br/>"
+    showstr+="</div>"
+
+        return show
      end
   end
 	def calender_p(month, year)	
