@@ -13,4 +13,4 @@ Style sheet not in the exact format
 Need to check on Routing
 Deploy this app on HEROKU
 
-Chec
+Check the working
