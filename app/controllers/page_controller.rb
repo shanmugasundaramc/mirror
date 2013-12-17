@@ -22,6 +22,7 @@ class PageController < ApplicationController
     @name=params[:name]
     @email=params[:email]
     @age=params[:age]
+    @food=params[:food]
   end
 
   def facts

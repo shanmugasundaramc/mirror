@@ -21,8 +21,21 @@ News
          </p>
          <p>
            <%= label_tag 'product', 'Product:' %>
+           <%# Various ways to write a select Tag %>
            <%#= select_tag 'product', options_for_select([['Skiies','skiies'],['Mittens','mittens']],2) %>
-           <%= select_tag 'product', options_for_select(@products,params[:product])%>
+           <%#= select_tag 'product', options_for_select(@products,params[:product]) #At the end parma[:product] is used to make the value sticky%>
+           <%= select_tag 'product', options_for_select(@products.map {|values|[values,values]}, params[:product]) %>
+         </p>
+
+         <p>
+           <h2>What would you like to have</h2><br/>
+         <%= label_tag :food_salad, 'Salad'%>
+            <%=	 radio_button_tag :food, :salad, @food=='salad' %><br/>
+         <%= label_tag :food_main, 'Main'%>
+         <%=	 radio_button_tag :food, :main, @food=='main' %><br/>
+         <%= label_tag :food_dessert, 'Dessert'%>
+         <%=	 radio_button_tag :food, :dessert, @food=='dessert' %>
+
          </p>
         <%= submit_tag "Submit the Question"%>
         <%end%>
