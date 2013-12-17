@@ -19,10 +19,14 @@ News
            <%= label_tag 'age',"Age:" %>
            <%= number_field_tag 'age',@age, :min=>18, :max=>100, :size=>50 %>
          </p>
+         <p>
+           <%= label_tag 'product', 'Product:' %>
+           <%= select_tag 'product', options_for_select([['Skiies','skiies'],['Mittens','mittens']]) %>
+         </p>
         <%= submit_tag "Submit the Question"%>
         <%end%>
 <%end%>
 
-<div>
-  <%= @name%>
-</div>
+  <% if params[:commit] !=nil %>
+  <%= show_params%>
+    <% end %>
