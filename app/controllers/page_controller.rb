@@ -1,4 +1,5 @@
 class PageController < ApplicationController
+  before_filter :setup
   def home
 	  @time=Time.now
 	  @deepak="Hello Rohan"
@@ -33,5 +34,9 @@ class PageController < ApplicationController
   end
 
   def login
+  end
+
+  def setup
+    @products=%w[ski jets shoes ice]
   end
 end

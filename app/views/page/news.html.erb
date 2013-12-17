@@ -21,7 +21,8 @@ News
          </p>
          <p>
            <%= label_tag 'product', 'Product:' %>
-           <%= select_tag 'product', options_for_select([['Skiies','skiies'],['Mittens','mittens']]) %>
+           <%#= select_tag 'product', options_for_select([['Skiies','skiies'],['Mittens','mittens']],2) %>
+           <%= select_tag 'product', options_for_select(@products,params[:product])%>
          </p>
         <%= submit_tag "Submit the Question"%>
         <%end%>
