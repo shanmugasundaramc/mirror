@@ -41,9 +41,21 @@
 			
 
 				</aside><!-- end of sidebar1 -->
-				<section id="content">	
+				<section id="content">
+
+                  <div style="border: 1px solid red">
+                    <%# TODO: Need to check why we need to introduce Notice when we are dealing with Error %>
+                    <% if flash[:notice] %>
+                        <p class="notice"><%=flash[:notice].html_safe %> </p>
+                    <% end %>
+                    <% if flash[:error] %>
+                        <p class="error"> <%=flash[:error].html_safe %> </p>
+                    <% end %>
+                  </div>
+
 
 				<%= yield %>
+
 			</section>
 
 		<aside id="sidebar2"><!-- sidebar2 -->
@@ -62,10 +74,10 @@
 <br>
 				<h3>We're Social Too!</h3><br>
 					
-					<%=image_tag "facebook_32.png"%>
-					<%=image_tag "twitter_32.png"%>
-					<%=image_tag "youtube_32.png"%>
-			
+					<%= link_to (image_tag ("facebook_32.png")),"http://www.fb.com" %>
+					<%= link_to (image_tag "twitter_32.png"), "http://www.twitter.com"%>
+					<%=link_to (image_tag ("youtube_32.png")), "http://www.youtube.com" %>
+
 <br>
 <br><br>
 <br>

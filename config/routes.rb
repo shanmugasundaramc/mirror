@@ -70,7 +70,7 @@ Blogger::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'page#home' # this helps to move to this location by default
+   root :to => 'page#home' # this helps to move to this location by default
 
   # See how all your routes lay out with "rake routes"
 

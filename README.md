@@ -14,3 +14,16 @@ Need to check on Routing
 Deploy this app on HEROKU
 
 Check the working
+
+11.54 
+Rails Database Migrations
+Active Record Query Interface
+
+guides.rubyonrails.org
+
+
+
+
+
+
+ 

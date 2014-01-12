@@ -1,4 +1,5 @@
 class PageController < ApplicationController
+  #TODO: Need to check how many filters are there and how they work!
   before_filter :setup
   def home
 	  @time=Time.now
@@ -21,6 +22,16 @@ class PageController < ApplicationController
     @times=Time.now
     @name=params[:name]
     @email=params[:email]
+
+    if params[:commit]
+      flash.now[:error]=""
+      if @name.nil? || @name.empty?
+        flash.now[:error] << "Name can't be Empty <br/>"
+      end
+      if @email.nil? || @email.empty?
+        flash.now[:error] << "Email cant be Empty"
+      end
+    end
     @age=params[:age]
     @food=params[:food]
   end
