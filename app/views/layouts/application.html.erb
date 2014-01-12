@@ -44,6 +44,7 @@
 				<section id="content">
 
                   <div style="border: 1px solid red">
+                    <%# TODO: Need to check why we need to introduce Notice when we are dealing with Error %>
                     <% if flash[:notice] %>
                         <p class="notice"><%=flash[:notice].html_safe %> </p>
                     <% end %>
