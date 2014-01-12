@@ -24,7 +24,8 @@ News
            <%# Various ways to write a select Tag %>
            <%#= select_tag 'product', options_for_select([['Skiies','skiies'],['Mittens','mittens']],2) %>
            <%#= select_tag 'product', options_for_select(@products,params[:product]) #At the end parma[:product] is used to make the value sticky%>
-           <%= select_tag 'product', options_for_select(@products.map {|values|[values,values]}, params[:product]) %>
+           <%#= select_tag 'product', options_for_select(@products.map {|values|[values,values]}, params[:product]) %>
+           <%= select_tag 'product',options_for_select(@products,params[:product])%>
          </p>
 
          <p>

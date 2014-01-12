@@ -41,9 +41,20 @@
 			
 
 				</aside><!-- end of sidebar1 -->
-				<section id="content">	
+				<section id="content">
+
+                  <div style="border: 1px solid red">
+                    <% if flash[:notice] %>
+                        <p class="notice"><%=flash[:notice].html_safe %> </p>
+                    <% end %>
+                    <% if flash[:error] %>
+                        <p class="error"> <%=flash[:error].html_safe %> </p>
+                    <% end %>
+                  </div>
+
 
 				<%= yield %>
+
 			</section>
 
 		<aside id="sidebar2"><!-- sidebar2 -->
