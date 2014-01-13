@@ -40,6 +40,7 @@ class PageController < ApplicationController
   end
 
   def fun
+    @funs=Fun.all
   end
 
   def aboutme

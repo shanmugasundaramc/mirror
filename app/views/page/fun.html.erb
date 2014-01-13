@@ -3,3 +3,13 @@ Fun
 <%end%>
 <h1>Page#fun</h1>
 <p>Find me in app/views/page/fun.html.erb</p>
+<% @funs.each do |fun|%>
+    <section style="border:1px solid #000000; padding:1px; margin:10px">
+      <%# TODO: Check how padding and margin is used in html %>
+<h3><heading><%= fun.title %><br/></heading></h3>
+      Content: <%= fun.content %><br/>
+      Made By: <%= fun.made_by %><br/>
+      LastSeen: <%= fun.last_seen %><br/>
+
+    </section>
+<%end%>
