@@ -41,6 +41,8 @@ class PageController < ApplicationController
 
   def fun
     @funs=Fun.all
+    @id=params[:id]
+    @funses=Fun.find(@id)
   end
 
   def aboutme

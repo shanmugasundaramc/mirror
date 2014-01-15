@@ -12,7 +12,9 @@ Blogger::Application.routes.draw do
 
   get "page/facts"
 
-  get "page/fun"
+  #get "page/fun"
+  #get "page/home/:id" => "page#fun", :as => "page_fun"
+  match ':page/:fun(/:id)(.:format)'=> "page#fun", :as => 'page_fun'
 
   get "page/aboutme"
 
