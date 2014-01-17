@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fact.name %>
+</p>
+
+<p>
+  <b>Made by:</b>
+  <%= @fact.made_by %>
+</p>
+
+<p>
+  <b>Heading:</b>
+  <%= @fact.heading %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @fact.content %>
+</p>
+
+<p>
+  <b>Last seen:</b>
+  <%= @fact.last_seen %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @fact.image %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @fact.cost %>
+</p>
+
+
+<%= link_to 'Edit', edit_fact_path(@fact) %> |
+<%= link_to 'Back', facts_path %>

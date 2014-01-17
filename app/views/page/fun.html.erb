@@ -12,8 +12,9 @@ Fun
       LastSeen: <%= fun.last_seen %><br/>
     </section>
 <%end%>
-
+    <%	 if (params[:id]) %>
     <h1>Finding a Single entry as per request based on params: </h1>
     <section style="border:1px solid #ff0000;margin:2px;padding: 1px">
       <h3><%= @funses.title %></h3>
     </section>
+<%end%>

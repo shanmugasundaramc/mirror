@@ -42,10 +42,14 @@ class PageController < ApplicationController
   def fun
     @funs=Fun.all
     @id=params[:id]
+    # I have a route where the id isnt compelsuory, However after adding the below line its optional now!
+    # This is because the below code will run only if i have id value
+    if(@id != nil)
     @funses=Fun.find(@id)
+      end
   end
 
-  def aboutme
+   def aboutme
   end
 
   def login

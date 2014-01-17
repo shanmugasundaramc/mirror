@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  made_by: MyString
+  heading: MyString
+  content: MyString
+  last_seen: 2014-01-17 17:27:41
+  image: MyString
+  cost: 9.99
+
+two:
+  name: MyString
+  made_by: MyString
+  heading: MyString
+  content: MyString
+  last_seen: 2014-01-17 17:27:41
+  image: MyString
+  cost: 9.99

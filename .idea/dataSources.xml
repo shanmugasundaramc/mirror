@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails rubyapp: development" uuid="f69c8c48-9c0b-462a-a5a3-963d8829d15a">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Rails\blogger\db\development.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
