@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fact:</b>
+  <%= @phoenix.fact %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @phoenix.content %>
+</p>
+
+<p>
+  <b>Made by:</b>
+  <%= @phoenix.made_by %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @phoenix.image %>
+</p>
+
+<p>
+  <b>No views:</b>
+  <%= @phoenix.no_views %>
+</p>
+
+<p>
+  <b>Last seen:</b>
+  <%= @phoenix.last_seen %>
+</p>
+
+
+<%= link_to 'Edit', edit_phoenix_path(@phoenix) %> |
+<%= link_to 'Back', phoenixes_path %>

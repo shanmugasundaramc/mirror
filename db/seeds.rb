@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+include Faker
+
+10.times do
+  a= Phoenix.create(:fact => Company.name,
+                :content => Lorem.paragraph(rand(1..4)),
+                :made_by => Name.name,
+                :last_seen => Time.now,
+                :image => "phoenix.jpg",
+                :no_views => rand(1..50)
+  )
+  puts a.inspect
+end
+

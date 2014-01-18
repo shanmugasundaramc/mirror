@@ -1,0 +1,33 @@
+<h1>Listing phoenixes</h1>
+
+<table>
+  <tr>
+    <th>Fact</th>
+    <th>Content</th>
+    <th>Made by</th>
+    <th>Image</th>
+    <th>No views</th>
+    <th>Last seen</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @phoenixes.each do |phoenix| %>
+  <tr>
+    <td><%= phoenix.fact %></td>
+    <td><%= phoenix.content %></td>
+    <td><%= phoenix.made_by %></td>
+    <td><%= phoenix.image %></td>
+    <td><%= phoenix.no_views %></td>
+    <td><%= phoenix.last_seen %></td>
+    <td><%= link_to 'Show', phoenix %></td>
+    <td><%= link_to 'Edit', edit_phoenix_path(phoenix) %></td>
+    <td><%= link_to 'Destroy', phoenix, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Phoenix', new_phoenix_path %>
