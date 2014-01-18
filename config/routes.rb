@@ -1,6 +1,6 @@
 Blogger::Application.routes.draw do  
   resources :phoenixes
-
+  get "phoenixes/destroy(/:id)(.:format)" => "phoenixes#destroy" ,:as => "phoenix_destroy"
   #get "page/home" #So here the issue
   #when the route is kept as above, I have the params of months decreasing and increasing as per the links
   #however, if i change the below line the params are not being passed when the page is being reloaded
@@ -14,7 +14,7 @@ Blogger::Application.routes.draw do
   get "page/facts"
 
   #get "page/fun"
-  #TODO HOW to add an optional parameter in Ruby in this case ID
+
   match "page/fun(/:id)(.:format)" => "page#fun", :as => "page_fun"
   #match ':page/:fun(/:id)(.:format)'=> "page#fun", :as => 'page_fun'
 
