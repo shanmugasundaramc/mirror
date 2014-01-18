@@ -6,10 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 include Faker
+
+Phoenix.delete_all
 images=["1081.jpg","1082.jpg","1083.jpg","1084.jpeg","1085.jpg","1086.jpg","1087.jpg","1089.jpeg"]
-10.times do
+60.times do
   a= Phoenix.create(:fact => Company.name,
-                :content => Lorem.paragraph(rand(1..4)),
+                :content => Lorem.paragraph(rand(4..10)),
                 :made_by => Name.name,
                 :last_seen => Time.now,
                 :image => images[rand(0..images.length)],

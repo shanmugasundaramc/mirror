@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'faker'
+gem 'will_paginate', '~> 3.0'
 
 gem 'mail', '2.4.4'
 # Gems used only for assets and not required

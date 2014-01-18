@@ -2,7 +2,14 @@ class PhoenixesController < ApplicationController
   # GET /phoenixes
   # GET /phoenixes.json
   def index
-    @phoenixes = Phoenix.all
+#@phoenixes = Phoenix.page (params[:page])
+#@phoenixes = Phoenix.paginate(:page => params[:page], :per_page => 5)
+#can even order by column by default its asc as shown below directly provide the-
+#-name of the column
+# @phoenixes = Phoenix.order(:fact).paginate(:page => params[:page], :per_page => 5)
+#kaminari gem
+    @phoenixes = Phoenix.order("fact DESC").paginate(:page => params[:page], :per_page => 5)
+
 
     respond_to do |format|
       format.html # index.html.erb
