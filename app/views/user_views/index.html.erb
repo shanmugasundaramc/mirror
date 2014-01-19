@@ -1,0 +1,27 @@
+<h1>Listing phoenixes</h1>
+<%	 #the paginate html content is given by the below line %>
+<%#= will_paginate @user_views, :class => "apple_pagination" %>
+<table>
+  <tr>
+    <th>Fact</th>
+    <th>Content</th>
+    <th>Image</th>
+    <th>Last seen</th>
+  </tr>
+
+  <% @phoenixes.each do |phoenix| %>
+      <tr>
+        <td><%= phoenix.fact %></td>
+        <td><%= truncate(phoenix.content, :limit => 25) %></td>
+        <td><%= link_to "Image","/assets/#{phoenix.image}" %></td>
+        <td><%= phoenix.no_views %></td>
+        <td><%= link_to 'Show', user_show_path(phoenix.id) %></td>
+
+      </tr>
+  <% end %>
+</table>
+<br/>
+
+<br />
+
+<%= will_paginate @phoenix, :class => "apple_pagination" %>

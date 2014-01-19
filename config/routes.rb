@@ -1,6 +1,10 @@
 Blogger::Application.routes.draw do  
   resources :phoenixes
   get "phoenixes/destroy(/:id)(.:format)" => "phoenixes#destroy" ,:as => "phoenix_destroy"
+
+
+  get "user_views/index" => "user_views#index", :as => "user_index"
+  get "user_views/show(/:id)(.:format)" => "user_views#show", :as => "user_show"
   #get "page/home" #So here the issue
   #when the route is kept as above, I have the params of months decreasing and increasing as per the links
   #however, if i change the below line the params are not being passed when the page is being reloaded

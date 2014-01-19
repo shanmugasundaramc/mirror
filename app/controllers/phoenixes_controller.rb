@@ -1,4 +1,6 @@
 class PhoenixesController < ApplicationController
+
+  before_filter 'auth_access'
   # GET /phoenixes
   # GET /phoenixes.json
   def index
@@ -87,4 +89,12 @@ class PhoenixesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def auth_access
+
+    authenticate_or_request_with_http_basic do |username,password|
+      username == "foo" && password == "bar"
+    end
+  end
 end
+
