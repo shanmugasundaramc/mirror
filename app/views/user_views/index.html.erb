@@ -2,7 +2,7 @@
 <%	 #the paginate html content is given by the below line %>
 <%= will_paginate @phoenixes, :class => "apple_pagination" %>
   <% @phoenixes.each do |phoenix| %>
-    <div style="border:1px solid #000000; margin:10px;padding:1px ">
+    <div style="border:1px solid #000000; margin:10px;padding:1px;width:100% ">
       <p>
         <h5>Fact: <%= phoenix.fact %><br/></h5>
         Content: <%= truncate(phoenix.content, :limit => 100) %><br/>

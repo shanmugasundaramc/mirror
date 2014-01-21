@@ -51,8 +51,13 @@
                     <% if flash[:error] %>
                         <p class="error"> <%=flash[:error].html_safe %> </p>
                     <% end %>
+                    <% if flash[:alert] %>
+                        <p class="error"> <%=flash[:alert].html_safe %> </p>
+                    <% end %>
                   </div>
-
+                  <% if user_signed_in? %>
+                      <h4>Hello, <%= current_user.email %></h4>
+                  <% end %>
 
 				<%= yield %>
 
@@ -146,7 +151,8 @@
 					</aside><!-- end of #third footer segment -->
 					
 					<aside class="footer-segment">
-							<h4>Blahdyblah</h4>
+                            <h4><%= link_to "Admin", phoenixes_path %></h4>
+							
 								<p>&copy; 2010 <a href="#">yoursite.com</a> Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
 					</aside><!-- end of #fourth footer segment -->
 
