@@ -40,6 +40,12 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Rails phoenix: development" uuid="cd693dfb-0ed7-4747-b541-0cfa750b2f57">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Rails\phoenix\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

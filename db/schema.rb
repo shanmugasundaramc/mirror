@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140121113754) do
+ActiveRecord::Schema.define(:version => 20140122143353) do
 
   create_table "facts", :force => true do |t|
     t.string   "name"
@@ -57,6 +57,18 @@ ActiveRecord::Schema.define(:version => 20140121113754) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "reviews", :force => true do |t|
+    t.string   "title"
+    t.string   "name"
+    t.text     "content"
+    t.integer  "rating"
+    t.integer  "phoenix_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "reviews", ["phoenix_id"], :name => "index_reviews_on_phoenix_id"
+
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -70,6 +82,8 @@ ActiveRecord::Schema.define(:version => 20140121113754) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "name"
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

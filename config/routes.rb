@@ -1,7 +1,11 @@
 Blogger::Application.routes.draw do  
+
+
   devise_for :users
 
-  resources :phoenixes
+  resources :phoenixes do
+    resources :reviews
+  end
   get "phoenixes/destroy(/:id)(.:format)" => "phoenixes#destroy" ,:as => "phoenix_destroy"
 
 
